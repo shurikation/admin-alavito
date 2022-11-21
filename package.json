@@ -1,0 +1,56 @@
+{
+  "name": "time-tracker",
+  "version": "0.0.1",
+  "description": "time tracker to be more productive",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack serve --hot --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurikation/time-tracker.git"
+  },
+  "keywords": [
+    "pug",
+    "react",
+    "tracking",
+    "project",
+    "scss"
+  ],
+  "author": "Alexander Popov <shurikation@gmail.com> (http://popovalex.ru/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shurikation/time-tracker/issues"
+  },
+  "homepage": "https://timetrack.io",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "html-webpack-pug-plugin": "^3.0.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "pug": "^3.0.2",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "pug-loader": "^2.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

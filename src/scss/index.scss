@@ -1,0 +1,51 @@
+:root {
+	--green: #16a085;
+	--red: #e05d6f;
+	--blue: #418bca;
+	--grey: #3f4e62;
+	--grey-light: #cccccc;
+	--white: #fff;
+}
+
+@import "./normalize.modified.scss";
+
+body {
+	text-rendering: optimizeLegibility;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 100px auto 100px;
+	grid-template-areas:
+		"header header header header"
+		"sidebar main main main"
+		"footer footer footer footer";
+}
+
+.main-header {
+	grid-area: header;
+	background-color: var(--red);
+}
+
+.sidebar {
+	grid-area: sidebar;
+	background-color: var(--grey);
+}
+
+.main {
+	grid-area: main;
+	background-color: var(--green);
+}
+
+.main-footer {
+	grid-area: footer;
+	background-color: var(--blue);
+}
+
+@import "./layout.scss";
+
+//*Components:
+@import "./sidebar.scss";
