@@ -17,7 +17,7 @@ body {
 
 .content {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: auto 1fr;
 	grid-template-rows: 100px auto 100px;
 	grid-template-areas:
 		"header header header header"
