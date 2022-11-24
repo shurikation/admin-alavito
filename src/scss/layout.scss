@@ -1,0 +1,28 @@
+.content {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 100px auto 100px;
+	grid-template-areas:
+		"header header header header"
+		"sidebar main main main"
+		"footer footer footer footer";
+}
+
+.main-header {
+	grid-area: header;
+	background-color: var(--red);
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.main-footer {
+	grid-area: footer;
+	background-color: var(--blue);
+}
+
+.main-content {
+	grid-area: main;
+	padding: 15px 25px;
+}
