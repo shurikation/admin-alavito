@@ -1,11 +1,22 @@
 .sidebar {
-	padding: 10px;
+	background-color: var(--grey);
 	color: var(--grey-light);
+	padding: 10px 35px 10px 15px;
+	overflow-x: scroll;
 	a {
 		&:hover {
 			color: var(--white);
 			cursor: pointer;
 		}
+	}
+	&::-webkit-scrollbar {
+		width: 7px;
+		background-color: var(--grey);
+		height: 100%;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--grey-light);
+		border-radius: 5px;
 	}
 }
 
@@ -20,14 +31,14 @@
 
 .sidebar__link {
 	text-transform: uppercase;
-	font-size: 19px;
+	font-size: 18px;
 	font-weight: 500;
 	cursor: pointer;
 }
 
 .sidebar__sub-list,
 .sidebar__sub-list-2 {
-	padding-left: 17px;
+	padding-left: 16px;
 }
 
 .sidebar__sub-link-2 {
