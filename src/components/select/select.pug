@@ -1,0 +1,7 @@
+include ./option
+
+mixin select(label, options)
+	label.label #{label}
+		select.select
+			each option in options
+				+option(option)

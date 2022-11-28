@@ -1,29 +1,3 @@
-//- mixin car(name, image, price)
-//- 	.car
-//- 		img(
-//-     		src=`images/${image}.jpg`, 
-//-     		alt=`${name}`)
-//- 		p.car__name #{name}
-//- 		p.car__price #{price}
-
 mixin input(type, label)
-	.input-group
+	label.label #{label}
 		input.input(type=`${type}`)
-		label.label #{label}
-
-//- mixin article(title)
-//- 	.article
-//- 		.article-wrapper
-//- 			h1= title
-
-
-	<div className="group">
-		<input className="form-input" {...otherProps} />
-		{
-			label &&
-			<label
-				className={`${otherProps.value.length ? 'shrink' : ''} form-input-label`}>
-				{label}
-			</label>
-		}
-</div>

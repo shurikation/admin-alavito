@@ -1,13 +1,18 @@
 include ../input/input
+include ../select/select
+
+- const  unitOfMeasurement = ['lorem', 'ipsum', 'dolor'];
 
 section.search-area
 	.search-tabs
 		button.button.button--blue.search-tabs__button Поиск
 		button.button.button--blue.search-tabs__button Сортировка
 	.search-inputs 
-		+input('text', 'Категория товара', 'search-inputs__inputs')
+		+input('text', 'Категория товара')
+		+input('text', 'От' )
+		+input('text', 'С' )
 		+input('text', 'Код ОКПД2')
+		+input('text', 'До' )
+		+input('text', 'По' )
 		+input('text', 'Идентификатор закупки')
-
-		//- //TODO: To select https://mui.com/material-ui/react-select/
-		+input('text', 'Единица измерения') 
+		+select('Единица измерения', unitOfMeasurement)
