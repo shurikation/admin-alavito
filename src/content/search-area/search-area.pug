@@ -1,5 +1,6 @@
-include ../input/input
-include ../select/select
+include ../../components/input/input
+include ../../components/select/select
+include ../../components/button/button
 
 - const  unitOfMeasurement = ['lorem', 'ipsum', 'dolor'];
 
@@ -16,3 +17,5 @@ section.search-area
 		+input('text', 'По' )
 		+input('text', 'Идентификатор закупки')
 		+select('Единица измерения', unitOfMeasurement)
+	+button('Найти')(class="button--blue search-tabs__button")
+	+button('Сбросить')(class="button--red search-tabs__button")
