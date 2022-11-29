@@ -10,7 +10,7 @@
 
 .main-header {
 	grid-area: header;
-	background-color: var(--red);
+	background-color: var(--grey);
 }
 
 .sidebar {
@@ -19,7 +19,7 @@
 
 .main-footer {
 	grid-area: footer;
-	background-color: var(--blue);
+	background-color: var(--grey);
 }
 
 .main-content {

@@ -23,8 +23,6 @@ body {
 		Helvetica Neue, sans-serif;
 }
 
-//BUTTON 1
-
 @import "./layout.scss";
 
 //*Pages
@@ -37,3 +35,7 @@ body {
 @import "./components/sidebar.scss";
 @import "./components/input.scss";
 @import "./components/button.scss";
+
+.collapse {
+	display: none;
+}

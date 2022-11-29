@@ -2,13 +2,17 @@ include ../../components/input/input
 include ../../components/select/select
 include ../../components/button/button
 
-- const  unitOfMeasurement = ['lorem', 'ipsum', 'dolor'];
+- const unitOfMeasurement = ['lorem', 'ipsum', 'dolor'];
+
+- const sortType = ['По убыванию', 'По возрастанию'];
+
+- const sortParameters = ['Название (категория товара)','ОКПД2','Идентификатор закупки', 'Единицы измерения','Дата аукциона','Дата публикации','Дата заключения договора','Покупатель/поставщик','Страна','Город','ИНН','НМЦК','Прием предложений','НДС','Товар/услуга','Цена договора','Время аукциона???','ОПФ ЮЛ','Статус закупки','статус договора','статус аукциона'];
 
 section.search-area
 	.search-tabs
-		button.button.button--blue.search-tabs__button Поиск
-		button.button.button--blue.search-tabs__button Сортировка
-	.search-inputs 
+		button(class="button button--blue search-tabs__button" name="search") Поиск
+		button(class="button button--blue search-tabs__button" name="sort") Сортировка
+	div(class="search-workspace collapse" data-name="search") 
 		+input('text', 'Категория товара')
 		+input('text', 'От' )
 		+input('text', 'С' )
@@ -17,5 +21,9 @@ section.search-area
 		+input('text', 'По' )
 		+input('text', 'Идентификатор закупки')
 		+select('Единица измерения', unitOfMeasurement)
-	+button('Найти')(class="button--blue search-tabs__button")
-	+button('Сбросить')(class="button--red search-tabs__button")
+	div(class="search-workspace collapse" data-name="sort")
+		+select('Сортировка', sortType)
+		+select('Дополнительная информация', sortParameters)
+	.search-footer.collapse
+		+button('Найти')(class="button--blue")
+		+button('Сбросить')(class="button--red search-tabs__button")
