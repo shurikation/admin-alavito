@@ -23,6 +23,11 @@ body {
 		Helvetica Neue, sans-serif;
 }
 
+.title,
+.subtitle {
+	color: var(--grey);
+}
+
 @import "./layout.scss";
 
 //*Pages
@@ -30,6 +35,8 @@ body {
 
 //*Content
 @import "./content/search-area.scss";
+@import "./content/purchase.scss";
+@import "./content/card.scss";
 
 //*Components:
 @import "./components/sidebar.scss";

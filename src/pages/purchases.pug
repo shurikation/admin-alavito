@@ -1,4 +1,5 @@
-extends ../templates/layout 
+extends ../templates/layout
+include ../components/button/button
 
 block outlet 
 
@@ -30,9 +31,23 @@ block outlet
 					button.icon-button.button--red
 						span.icon &#10006;
 
-				//- //TODO: Add icons for buttons - and ability to icons
+	//- Purchase
+	h3.purchase__title.title Закупка №1234567890
+	p.purchase__subtitle.subtitle Общая информация
 
+	block purchase 
+		include ./../content/purchase/purchase
 
+	.purchase__additional-info
+	h3.title Дополнительная информация
+	.purchase__additional-buttons
+		+button('История закупки')(class='button--blue button--small')
+		+button('Предложения')(class='button--blue button--small')
+		+button('Аукцион')(class='button--blue button--small')
+		+button('Договор')(class='button--blue button--small')
+		+button('БС')(class='button--blue button--small')
 
+	block card 
+		include ./../content/card/card
 
 

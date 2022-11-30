@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				workspace.classList.remove('collapse');
 				footer.classList.remove('collapse')
 			}
+
 			prevTab = workspace;
 		})
 	}

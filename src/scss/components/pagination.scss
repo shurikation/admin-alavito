@@ -10,3 +10,9 @@
 .pagination--active {
 	background-color: var(--green);
 }
+
+.purchase__additional-buttons {
+	& button:nth-child(n + 2) {
+		margin-left: 10px;
+	}
+}

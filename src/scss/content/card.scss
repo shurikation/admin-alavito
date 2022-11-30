@@ -1,0 +1,48 @@
+.purchases__card {
+	margin-top: 30px;
+}
+
+.card {
+	padding: 10px 15px;
+	border: 1px solid var(--grey);
+	width: 800px;
+}
+
+.card__title {
+	text-transform: uppercase;
+	text-shadow: 10px;
+	font-size: 16px;
+}
+
+.card__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card__header-buttons {
+	& button:nth-child(n + 2) {
+		margin-left: 20px;
+	}
+}
+
+.card__info-card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.info-card__key {
+	font-weight: 500;
+	margin-right: 5px;
+}
+
+.info-card__title {
+	grid-column: 2 / 3;
+}
+
+.card__footer-card {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}

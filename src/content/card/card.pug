@@ -1,0 +1,62 @@
+include ./../../components/button/button
+
+section.card
+	header.card__header
+		h5.card__title.title Товар Название #333
+		.card__header-buttons
+			+button('lorem')(class="button--blue button--small")
+			+button('ipsum')(class="button--blue button--small")
+	.card__info-card
+		p.title
+			span.info-card__key Стоимость:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Прием предложений до:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Количество:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Дата аукциона:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Цена за кг:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Страна:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Шаг аукциона:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Регион:
+			span Lorem, ipsum dolor.
+		p.title
+			span.info-card__key Дата публикации:
+			span Lorem, ipsum dolor.
+		p.title.info-card__title
+			span.info-card__key НДС:
+			span Lorem, ipsum dolor.
+	footer.card__footer-card 
+		+button('Lorem')(class="button--blue button--small")
+		+button('Lorem')(class="button--blue button--small")
+		+button('Lorem')(class="button--blue button--small")
+		+button('Lorem')(class="button--blue button--small")
+
+
+
+//- Стоимость:
+//- Количество:
+//- Цена за кг:
+//- Страна:
+//- Регион:
+
+//- Прием предложений до:_________
+//- Дата аукциона:__________________
+//- Время аукциона:
+//- Шаг аукциона:
+//- Дата публикации:
+//- НДС:
+
+
+

@@ -33,6 +33,10 @@
 	}
 }
 
+.button--small {
+	padding: 7px 20px;
+}
+
 .button--blue {
 	background-color: var(--blue);
 	&:hover {
