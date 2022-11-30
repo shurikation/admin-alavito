@@ -16,28 +16,45 @@
 	transition: all 0.3s;
 }
 
+.icon-button {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	font-size: 20px;
+	color: var(--white);
+	border: 2px solid;
+	& .icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
 .button--blue {
 	background-color: var(--blue);
 	&:hover {
 		color: var(--blue);
-		background-color: #fff;
-		border: 2px solid var(--blue);
+		background-color: transparent;
+		border: 2px solid;
 	}
 }
 
 .button--red {
 	background-color: var(--red);
 	&:hover {
-		color: var(--blue);
-		background-color: #fff;
-		border: 2px solid var(--blue);
+		color: var(--red);
+		background-color: transparent;
+		border: 2px solid;
 	}
 }
 .button--green {
 	background-color: var(--green);
 	&:hover {
-		color: var(--blue);
-		background-color: #fff;
+		color: var(--green);
+		background-color: transparent;
 		border: 2px solid;
 	}
 }

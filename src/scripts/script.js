@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		const tabs = document.querySelector('.search-tabs');
 		let prevTab = null;
 		tabs.addEventListener('click', (e) => {
+			if (e.target.tagName !== 'BUTTON') return
+
 			if (prevTab) prevTab.classList.add('collapse');
 
 			const type = e.target.name;

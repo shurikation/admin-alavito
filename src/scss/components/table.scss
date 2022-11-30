@@ -1,0 +1,16 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead td {
+	border-bottom: 2px solid var(--grey);
+	text-align: center;
+	font-weight: 500;
+}
+
+td {
+	border-bottom: 1px solid var(--grey);
+	text-align: center;
+	padding: 7px 0;
+}

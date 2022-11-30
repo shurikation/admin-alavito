@@ -1,0 +1,12 @@
+.pagination-wrapper {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.pagination {
+	margin: 0 auto;
+}
+
+.pagination--active {
+	background-color: var(--green);
+}

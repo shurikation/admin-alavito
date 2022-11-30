@@ -5,4 +5,34 @@ block outlet
 	block search-area
 		include ./../content/search-area/search-area
 
+	block pagination 
+		include ./../components/pagination/pagination
+
+	table.table
+		thead
+			tr 
+				td ID
+				td Название
+				td Количество
+				td НМЦК
+				td Действия
+		tbody
+			tr
+				td ID
+				td Название
+				td Количество
+				td НМЦК
+				td
+					button.icon-button.button--blue  
+						span.icon &#9432;
+					button.icon-button.button--blue 
+						span.icon &#10000;
+					button.icon-button.button--red
+						span.icon &#10006;
+
+				//- //TODO: Add icons for buttons - and ability to icons
+
+
+
+
 
