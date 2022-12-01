@@ -13,7 +13,10 @@ html(lang="en")
 
 		main.main-content
 			.main-content__wrapper
-
+				block search-area
+					include ./../content/search-area/search-area
+				block pagination 
+					include ./../components/pagination/pagination
 
 				block outlet
 

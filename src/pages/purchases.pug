@@ -1,7 +1,7 @@
 extends ../templates/layout
 include ../components/button/button
 
-block outlet 
+block outlet
 	table.table
 		thead
 			tr 
@@ -17,81 +17,80 @@ block outlet
 				td Количество
 				td НМЦК
 				td
-					button.icon-button.button--blue  
-						span.icon &#9432;
+					a(href="/purchases-detail.html")
+						button.icon-button.button--blue  
+							span.icon &#9432;
 					button.icon-button.button--blue 
 						span.icon &#10000;
 					button.icon-button.button--red
 						span.icon &#10006;
 
 	//- Purchase
-	h3.purchase__title.title Закупка №1234567890
-	p.purchase__subtitle.subtitle Общая информация
+	//- h3.purchase__title.title Закупка №1234567890
+	//- p.purchase__subtitle.subtitle Общая информация
 
-	block purchase 
-		include ./../content/purchase/purchase
+	//- block purchase 
+	//- 	include ./../content/purchase/purchase
 
-	.purchase__additional-info
-	h3.title Дополнительная информация
-	.purchase__additional-buttons
-		+button('История закупки')(class='button--blue button--small')
-		+button('Предложения')(class='button--blue button--small')
-		+button('Аукцион')(class='button--blue button--small')
-		+button('Договор')(class='button--blue button--small')
-		+button('БС')(class='button--blue button--small')
+	//- .purchase__additional-info
+	//- h3.title Дополнительная информация
+	//- .purchase__additional-buttons
+	//- 	+button('История закупки')(class='button--blue button--small')
+	//- 	+button('Предложения')(class='button--blue button--small')
+	//- 	+button('Аукцион')(class='button--blue button--small')
+	//- 	+button('Договор')(class='button--blue button--small')
+	//- 	+button('БС')(class='button--blue button--small')
+
+	//- br
+	//- br
+	//- br
+
+
+
+	br
+
+	//- h3.title Предложение к закупке
+	//- section.card
+	//- 	header.card__header
+	//- 		h5.card__title.title Предложение к закупке #333
+	//- 		//- .card__header-buttons
+	//- 		//- 	+button('lorem')(class="button--blue button--small")
+	//- 		//- 	+button('ipsum')(class="button--blue button--small")
+	//- 	.card__info-card
+	//- 		p.title
+	//- 			span.info-card__key Предложение от:
+	//- 			span Lorem, ipsum dolor.
+	//- 		p.title
+	//- 			span.info-card__key Дата предложения:
+	//- 			span Lorem, ipsum dolor.
+	//- 		p.title
+	//- 			span.info-card__key ИНН:
+	//- 			span Lorem, ipsum dolor.
+	//- 		p.title
+	//- 			span.info-card__key НДС:
+	//- 			span Lorem, ipsum dolor.
+	//- 	footer.card__footer-card 
+	//- 		+button('Файл ТП')(class="button--blue button--small")
 
 	br
 	br
 	br
 
-	h3.title Закупка
-	block card 
-		include ./../content/card/card
+	//- h3.title История закупки
+	//- block card 
+	//- 	include ./../content/card/card
 
-	br
-
-	h3.title Предложение к закупке
-	section.card
-		header.card__header
-			h5.card__title.title Предложение к закупке #333
-			//- .card__header-buttons
-			//- 	+button('lorem')(class="button--blue button--small")
-			//- 	+button('ipsum')(class="button--blue button--small")
-		.card__info-card
-			p.title
-				span.info-card__key Предложение от:
-				span Lorem, ipsum dolor.
-			p.title
-				span.info-card__key Дата предложения:
-				span Lorem, ipsum dolor.
-			p.title
-				span.info-card__key ИНН:
-				span Lorem, ipsum dolor.
-			p.title
-				span.info-card__key НДС:
-				span Lorem, ipsum dolor.
-		footer.card__footer-card 
-			+button('Файл ТП')(class="button--blue button--small")
-
-	br
-	br
-	br
-
-	h3.title История закупки
-	block card 
-		include ./../content/card/card
-
-	table.table
-		thead
-			tr 
-				td Дата
-				td Операция
-				td Операция с балансом
-		tbody
-			tr
-				td -
-				td -
-				td -
+	//- table.table
+	//- 	thead
+	//- 		tr 
+	//- 			td Дата
+	//- 			td Операция
+	//- 			td Операция с балансом
+	//- 	tbody
+	//- 		tr
+	//- 			td -
+	//- 			td -
+	//- 			td -
 
 
 

@@ -1,0 +1,30 @@
+extends ../templates/layout
+include ../components/button/button
+
+block outlet
+	h3.title.purchases-offer__title Закупка
+	block card 
+		include ./../content/card/card
+
+	h3.title.purchases-offer__title Предложение к закупке
+	section.card
+		header.card__header
+			h5.card__title.title Предложение к закупке #333
+			//- .card__header-buttons
+			//- 	+button('lorem')(class="button--blue button--small")
+			//- 	+button('ipsum')(class="button--blue button--small")
+		.card__info-card
+			p.title
+				span.info-card__key Предложение от:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Дата предложения:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key ИНН:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key НДС:
+				span Lorem, ipsum dolor.
+		footer.card__footer-card 
+			+button('Файл ТП')(class="button--blue button--small")

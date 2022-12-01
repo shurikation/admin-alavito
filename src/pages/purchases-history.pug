@@ -1,0 +1,19 @@
+extends ../templates/layout
+include ../components/button/button
+
+block outlet
+	h3.title История закупки
+	block card 
+		include ./../content/card/card
+
+	table.table.purchase-history__table
+		thead
+			tr 
+				td Дата
+				td Операция
+				td Операция с балансом
+		tbody
+			tr
+				td -
+				td -
+				td -
