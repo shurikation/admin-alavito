@@ -2,13 +2,6 @@ extends ../templates/layout
 include ../components/button/button
 
 block outlet 
-
-	block search-area
-		include ./../content/search-area/search-area
-
-	block pagination 
-		include ./../components/pagination/pagination
-
 	table.table
 		thead
 			tr 
@@ -47,7 +40,62 @@ block outlet
 		+button('Договор')(class='button--blue button--small')
 		+button('БС')(class='button--blue button--small')
 
+	br
+	br
+	br
+
+	h3.title Закупка
 	block card 
 		include ./../content/card/card
+
+	br
+
+	h3.title Предложение к закупке
+	section.card
+		header.card__header
+			h5.card__title.title Предложение к закупке #333
+			//- .card__header-buttons
+			//- 	+button('lorem')(class="button--blue button--small")
+			//- 	+button('ipsum')(class="button--blue button--small")
+		.card__info-card
+			p.title
+				span.info-card__key Предложение от:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Дата предложения:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key ИНН:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key НДС:
+				span Lorem, ipsum dolor.
+		footer.card__footer-card 
+			+button('Файл ТП')(class="button--blue button--small")
+
+	br
+	br
+	br
+
+	h3.title История закупки
+	block card 
+		include ./../content/card/card
+
+	table.table
+		thead
+			tr 
+				td Дата
+				td Операция
+				td Операция с балансом
+		tbody
+			tr
+				td -
+				td -
+				td -
+
+
+
+
+
 
 
