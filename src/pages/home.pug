@@ -1,0 +1,9 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	.home
+		h2.title.home__title Добро пожаловать, Админ!
+		+button-link('Открыть сайт Алавито')(class="button--blue home__button" href="https://alavito.ru")
+		+button-link('Выйти')(class="button--red home__button")
