@@ -1,5 +1,7 @@
 extends ../templates/layout
 include ../components/button/button
+include ../components/button-link/button-link
+include ../components/button-icon-link/button-icon-link
 
 block outlet
 	table.table
@@ -16,85 +18,11 @@ block outlet
 				td Название
 				td Количество
 				td НМЦК
-				td
-					a(href="/admin-alavito/public/purchases-detail.html")
-						button.icon-button.button--blue  
-							span.icon &#9432;
+				td.table__action-buttons
+					a(href="/admin-alavito/public/purchases-detail.html",
+					class="icon-button button--blue")
+						span.icon-button__icon &#9432;
 					button.icon-button.button--blue 
-						span.icon &#10000;
+						span.icon-button__icon &#10000;
 					button.icon-button.button--red
-						span.icon &#10006;
-
-	//- Purchase
-	//- h3.purchase__title.title Закупка №1234567890
-	//- p.purchase__subtitle.subtitle Общая информация
-
-	//- block purchase 
-	//- 	include ./../content/purchase/purchase
-
-	//- .purchase__additional-info
-	//- h3.title Дополнительная информация
-	//- .purchase__additional-buttons
-	//- 	+button('История закупки')(class='button--blue button--small')
-	//- 	+button('Предложения')(class='button--blue button--small')
-	//- 	+button('Аукцион')(class='button--blue button--small')
-	//- 	+button('Договор')(class='button--blue button--small')
-	//- 	+button('БС')(class='button--blue button--small')
-
-	//- br
-	//- br
-	//- br
-
-
-
-	br
-
-	//- h3.title Предложение к закупке
-	//- section.card
-	//- 	header.card__header
-	//- 		h5.card__title.title Предложение к закупке #333
-	//- 		//- .card__header-buttons
-	//- 		//- 	+button('lorem')(class="button--blue button--small")
-	//- 		//- 	+button('ipsum')(class="button--blue button--small")
-	//- 	.card__info-card
-	//- 		p.title
-	//- 			span.info-card__key Предложение от:
-	//- 			span Lorem, ipsum dolor.
-	//- 		p.title
-	//- 			span.info-card__key Дата предложения:
-	//- 			span Lorem, ipsum dolor.
-	//- 		p.title
-	//- 			span.info-card__key ИНН:
-	//- 			span Lorem, ipsum dolor.
-	//- 		p.title
-	//- 			span.info-card__key НДС:
-	//- 			span Lorem, ipsum dolor.
-	//- 	footer.card__footer-card 
-	//- 		+button('Файл ТП')(class="button--blue button--small")
-
-	br
-	br
-	br
-
-	//- h3.title История закупки
-	//- block card 
-	//- 	include ./../content/card/card
-
-	//- table.table
-	//- 	thead
-	//- 		tr 
-	//- 			td Дата
-	//- 			td Операция
-	//- 			td Операция с балансом
-	//- 	tbody
-	//- 		tr
-	//- 			td -
-	//- 			td -
-	//- 			td -
-
-
-
-
-
-
-
+						span.icon-button__icon &#10006;

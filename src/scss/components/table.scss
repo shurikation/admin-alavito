@@ -3,6 +3,11 @@
 	border-collapse: collapse;
 }
 
+.table__action-buttons {
+	display: flex;
+	justify-content: center;
+}
+
 thead td {
 	border-bottom: 2px solid var(--grey);
 	text-align: center;

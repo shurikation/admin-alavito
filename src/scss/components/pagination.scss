@@ -5,6 +5,7 @@
 
 .pagination {
 	margin: 0 auto;
+	display: flex;
 }
 
 .pagination--active {
@@ -12,7 +13,7 @@
 }
 
 .purchase__additional-buttons {
-	& button:nth-child(n + 2) {
+	& .button:nth-child(n + 2) {
 		margin-left: 10px;
 	}
 }

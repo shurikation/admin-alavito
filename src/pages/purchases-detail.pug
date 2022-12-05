@@ -1,5 +1,6 @@
 extends ../templates/layout
 include ../components/button/button
+include ../components/button-link/button-link
 
 block outlet
 	h3.purchase__title.title Закупка №1234567890
@@ -11,10 +12,8 @@ block outlet
 	.purchase__additional-info
 	h3.title Дополнительная информация
 	.purchase__additional-buttons
-		a(href="/admin-alavito/public/purchases-history.html")
-			+button('История закупки')(class='button--blue button--small')
-		a(href="/admin-alavito/public/purchases-offer.html")
-			+button('Предложения')(class='button--blue button--small')
+		+button-link('История закупки')(class='button--blue button--small' href="/admin-alavito/public/purchases-history.html")
+		+button-link('Предложения')(class='button--blue button--small' href="/admin-alavito/public/purchases-offer.html")
 		+button('Аукцион')(class='button--blue button--small')
 		+button('Договор')(class='button--blue button--small')
 		+button('БС')(class='button--blue button--small')
