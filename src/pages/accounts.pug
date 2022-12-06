@@ -1,0 +1,28 @@
+extends ../templates/layout
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Аккаунты
+	table.table.mt30px
+		thead
+			tr 
+				td Логин
+				td Название
+				td E-mail
+				td Регион
+				td Действия
+		tbody
+			tr
+				td Логин
+				td Название
+				td E-mail
+				td Регион
+				td.table__action-buttons
+					a(href="/admin-alavito/public/accounts-info.html",
+					class="icon-button button--blue")
+						span.icon-button__icon &#9432;
+					button.icon-button.button--blue 
+						span.icon-button__icon &#10000;
+					button.icon-button.button--red
+						span.icon-button__icon &#10006;

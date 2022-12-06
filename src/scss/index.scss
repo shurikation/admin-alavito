@@ -10,7 +10,7 @@
 
 	//--grey: #3f4e62;
 	--grey: #34495e;
-
+	--grey-medium: #727e8b;
 	--grey-light: #cccccc;
 	--white: #fff;
 }
@@ -26,6 +26,29 @@ body {
 .title,
 .subtitle {
 	color: var(--grey);
+}
+
+.section-title,
+.section-subtitle {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.section-subtitle {
+	color: var(--grey-medium);
+}
+
+.mt10px {
+	margin-top: 10px;
+}
+
+.mt30px {
+	margin-top: 30px;
+}
+
+.ml10px {
+	margin-left: 10px;
 }
 
 @import "./layout.scss";

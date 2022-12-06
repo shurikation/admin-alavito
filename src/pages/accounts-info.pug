@@ -1,0 +1,122 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Аккаунты / 
+		span.section-subtitle Информация
+	section.card.mt30px
+		header.card__header
+			h5.card__title.title Общая информация
+			.card__header-buttons
+		.card__info-card
+			p.title
+				span.info-card__key ИНН:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key E-mail:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Cтрана:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key ОПФ ЮЛ:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Название (ФИО для ИП):
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Регион:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Город:
+				span Lorem, ipsum dolor.
+		footer.card__footer-card 
+
+	section.card.mt30px
+		header.card__header
+			h5.card__title.title Дополнительная информация
+			.card__header-buttons
+				+button-link('Данные договора')(class="button--blue button--small" href="/admin-alavito/public/accounts-contract-data.html")
+				+button-link('Сертификаты ЭПЦ')(class="button--blue button--small ml10px" href="/admin-alavito/public/accounts-cert.html")
+		.card__info-card
+			p.title
+				span.info-card__key ИНН:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key E-mail:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Cтрана:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key ОПФ ЮЛ:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Название (ФИО для ИП):
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Регион:
+				span Lorem, ipsum dolor.
+			p.title
+				span.info-card__key Город:
+				span Lorem, ipsum dolor.
+		footer.card__footer-card 
+			+button-link('Данные профиля')(class="button--blue button--small" href="/admin-alavito/public/accounts-profile.html")
+			+button('Настройки аккаунта')(class="button--blue button--small")
+
+	h3.title.mt30px Данные по работе в качестве покупателя 
+		b Аккаунт #12345
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Закупки
+			.card__header-buttons
+				+button('Список закупок')(class="button--blue button--small")
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Аукционы
+			.card__header-buttons
+				+button('Список аукционов')(class="button--blue button--small")
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Договоры
+			.card__header-buttons
+				+button('Список договоров')(class="button--blue button--small")
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Безопасная сделка
+			.card__header-buttons
+				+button('Список безопасных сделок')(class="button--blue button--small")
+
+
+
+	h3.title.mt30px Данные по работе в качестве поставщика 
+		b Аккаунт #12345
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Закупки (Предложения)
+			.card__header-buttons
+				+button('Список предложений')(class="button--green button--small")
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Аукционы
+			.card__header-buttons
+				+button('Список аукционов')(class="button--green button--small")
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Договоры
+			.card__header-buttons
+				+button('Список договоров')(class="button--green button--small")
+
+	section.card.mt10px
+		header.card__header
+			h5.card__title.title Безопасная сделка
+			.card__header-buttons
+				+button('Список безопасных сделок')(class="button--green button--small")

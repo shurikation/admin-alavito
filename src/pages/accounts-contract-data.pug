@@ -1,0 +1,37 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Аккаунты / 
+		span.section-subtitle Данные для договора
+
+	h3.title.mt30px Данные для договора
+	table.table.table--left-title.mt10px
+		tbody
+			tr
+				td.table__title Преамбула
+				td
+			tr
+				td.table__title Юридический адрес
+				td 
+			tr
+				td.table__title Почтовый адрес
+				td 
+
+	h3.title.mt30px Банковские реквизиты
+	table.table.table--left-title.mt10px
+		tbody
+			tr
+				td.table__title Банк
+				td
+			tr
+				td.table__title Р/С
+				td 
+			tr
+				td.table__title К/C
+				td
+			tr
+				td.table__title БИК
+				td 
+
