@@ -37,6 +37,11 @@
 	color: var((--grey-light));
 }
 
+.sidebar__sub-link {
+	cursor: pointer;
+	color: var((--grey-light));
+}
+
 .sidebar__sub-list,
 .sidebar__sub-list-2 {
 	padding-left: 16px;
