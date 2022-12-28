@@ -1,0 +1,55 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Аукционы / 
+		span.section-subtitle Информация
+	h3.title.section-title.mt30px Аукцион №
+		span 1234567890
+	table.table.table--left-title.mt10px
+		tbody
+			tr
+				td.table__title Статус
+				td
+			tr
+				td.table__title Стоимость
+				td 
+			tr
+				td.table__title Цена за список
+				td
+			tr
+				td.table__title Страна
+				td
+			tr
+				td.table__title Регион
+				td
+			tr
+				td.table__title Прием предложений до
+				td
+			tr
+				td.table__title Дата аукциона
+				td
+			tr
+				td.table__title Время аукциона
+				td
+			tr
+				td.table__title Шаг аукциона
+				td
+			tr
+				td.table__title Дата публикации
+				td
+			tr
+				td.table__title НДС
+				td
+			tr
+				td.table__title Победитель
+				td
+
+	h3.title.mt30px Дополнительная информация
+	.purchase__additional-buttons.mt10px
+		+button-link('Закупки')(class='button--blue button--small' href="/admin-alavito/public/purchases-history.html")
+		+button-link('История торгов')(class='button--blue button--small' href="/admin-alavito/public/auctions-trade-history.html")
+		+button('Договор')(class='button--blue button--small')
+		+button-link('Список участников')(class='button--blue button--small' href="/admin-alavito/public/auctions-competitors-list.html")
+		+button('БС')(class='button--blue button--small')

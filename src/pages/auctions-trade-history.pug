@@ -1,0 +1,33 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Аукционы / 
+		span.section-subtitle История торгов
+	table.table.table--left-title.mt30px
+		tbody
+			tr
+				td.table__title Победитель
+				td
+			tr
+				td.table__title Участник
+				td 
+			tr
+				td.table__title Цена
+				td
+			tr
+				td.table__title Время
+				td
+
+	table.table.purchase-history__table.mt30px
+		thead
+			tr 
+				td Предложения
+				td Участники
+				td Время
+		tbody
+			tr
+				td -
+				td -
+				td -

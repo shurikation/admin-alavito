@@ -1,0 +1,26 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Аукционы / 
+		span.section-subtitle Список участников
+	table.table.mt30px
+		thead
+			tr 
+				td №
+				td Участник
+				td Регион
+				td ИНН
+				td Дата предложения
+				td Действия
+		tbody
+			tr
+				td №
+				td Участник
+				td Регион
+				td ИНН
+				td Дата предложения
+				td.table__action-buttons
+					+button('Допустить')(class='button--green button--small')
+					+button('Запретить')(class='button--red button--small ml10px')
