@@ -1,0 +1,29 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Безопасные сделки / 
+		span.section-subtitle Общая информация
+	h3.title.section-title.mt30px Безопасная сделка №
+		span 1234567890
+	table.table.table--left-title.mt10px
+		tbody
+			tr
+				td.table__title Lorem
+				td
+			tr
+				td.table__title Ipsum
+				td 
+			tr
+				td.table__title Dolor
+				td
+			tr
+				td.table__title Set
+				td
+
+	h3.title.mt30px Дополнительная информация
+	.purchase__additional-buttons.mt10px
+		+button-link('Lorem')(class='button--blue button--small' href="/admin-alavito/public/purchases-history.html")
+		+button-link('Ipsum')(class='button--blue button--small' href="/admin-alavito/public/auctions-trade-history.html")
+		+button('Dolor')(class='button--blue button--small')
