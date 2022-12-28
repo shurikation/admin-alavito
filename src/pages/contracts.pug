@@ -1,0 +1,22 @@
+extends ../templates/layout
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Договоры
+	table.table.mt30px
+		thead
+			tr 
+				td Договор
+				td Статус
+				td Действия
+		tbody
+			tr
+				td Аукционы
+				td Статус
+				td.table__action-buttons
+					a(href="/admin-alavito/public/contracts-info.html",
+					class="icon-button button--blue")
+						span.icon-button__icon &#9432;
+					button.icon-button.button--red
+						span.icon-button__icon &#10006;

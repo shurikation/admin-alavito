@@ -1,0 +1,44 @@
+extends ../templates/no-pagination
+include ../components/button/button
+include ../components/button-link/button-link
+
+block outlet
+	h3.title.section-title Договоры / 
+		span.section-subtitle Информация
+	h3.title.section-title.mt30px Договор №
+		span 1234567890
+	table.table.table--left-title.mt10px
+		tbody
+			tr
+				td.table__title Статус
+				td
+			tr
+				td.table__title Дата аукциона
+				td 
+			tr
+				td.table__title Цена договора
+				td
+			tr
+				td.table__title Победитель акциона
+				td
+			tr
+				td.table__title ИНН победителя
+				td
+			tr
+				td.table__title Страна
+				td
+			tr
+				td.table__title Регион
+				td
+
+	h3.title.mt30px Дополнительная информация
+	.purchase__additional-buttons.mt10px
+		+button-link('Договор')(class='button--blue button--small' href="/admin-alavito/public/purchases-history.html")
+		+button-link('Договор подписанный покупателем')(class='button--blue button--small' href="/admin-alavito/public/auctions-trade-history.html")
+		+button('Договор подписанный поставщиком')(class='button--blue button--small')
+		+button-link('Аукцион')(class='button--blue button--small' href="/admin-alavito/public/purchases-history.html")
+		+button-link('БС')(class='button--blue button--small' href="/admin-alavito/public/auctions-trade-history.html")
+		+button('Закупка')(class='button--blue button--small')
+		+button('Скачать приложение к договору PDF')(class='button--green button--small')
+		+button('Скачать техническое предложение PDF')(class='button--green button--small')
+

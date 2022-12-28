@@ -13,7 +13,10 @@
 }
 
 .purchase__additional-buttons {
-	& .button:nth-child(n + 2) {
-		margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	& .button {
+		margin: 5px 0;
 	}
 }
